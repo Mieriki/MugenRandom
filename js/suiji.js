@@ -48,7 +48,7 @@ let vm = new Vue({
 		},
 		
 		isShu (shu) {
-			if (shu > 0) return shu;
+			if (shu > 0) return parseInt(shu);
 			return 1;
 		},
 		
