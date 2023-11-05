@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Mugen随机抽奖</title>
+		<!-- <script src="https://unpkg.com/vue@next"></script> -->
+		<link rel="stylesheet" type="text/css" href="./css/suiji.css"/>
+		<script src="./js/v2.6.10/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/suiji.js" type="text/javascript" defer="true"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="atama">
+				<div class="top">
+					<div class="zanw"></div>
+					<img class="logo" src="Image/logo.png"/>
+					<!-- <p class="logme hollow">MUGEN动漫社 随机数生成器</p>-->
+					<img src="./Image/cskt.png" class="logo-kan"/>
+				</div>
+			</div>
+			<div class="karada">
+				<div class="omo">
+					<div class="index">
+						<form>
+							<div class="gerup">
+								<p class="meise">数&emsp;量：</p><input type="text" v-model="cont" class="textInn" placeholder="1"/><br>
+							</div>
+							<div class="gerup">
+								<p class="meise">间&emsp;距：</p><input type="text" v-model="kan" class="textInn" placeholder="1"/><br>
+							</div>
+							<div class="gerup">
+								<p class="meise">最小值：</p><input type="text" v-model="min" class="textInn" placeholder="1"/><br>
+							</div>
+							<div class="gerup">
+								<p class="meise">最大值：</p><input type="text" v-model="max" class="textInn" placeholder="100"/><br>
+							</div>
+							<div>
+								<p class="meise-radio">是否唯一：</p>
+								<input type="radio" v-model="wei" class="radInn" value="true" @click="jieWeiTot"/><samp>唯一</samp>
+								<input type="radio" v-model="wei" class="radInn" value="false" @click="jieWeiTof"/><samp>重复</samp><br>
+							</div>
+							<div>
+								<p class="meise-radio">是否有序：</p>
+								<input type="radio" v-model="xu" class="radInn" value="true" @click="jieXuTot"/><samp>有序</samp>
+								<input type="radio" v-model="xu" class="radInn" value="false" @click="jieXuTof"/><samp>无序</samp><br>
+							</div>
+							<div class="butInn">
+								<input type="button" class="custom-button" value="直接生成" @click="shuSc"/>
+								<input type="button" class="custom-button custom-button-r" v-model="timeSc" @click="butTimeSc"/>
+							</div>
+
+						</form>
+					</div>
+					<div class="result">
+						<ul>
+							<li v-for="item in list">{{ item }}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sippo">
+				<div class="endmas">
+					<div class="zand"></div>
+					<img v-bind:src="logo" class="logo-js botLoc" @click="logoKae"/>
+					<p class="logme botLoc">Mugen 技术部</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

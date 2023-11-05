@@ -1,0 +1,259 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#app {
+	width: 100%;
+	height: 760px;
+	background-image: url("../Image/badg_1.png");
+	background-size:100% 100%;
+	background-attachment:fixed;
+}
+
+.atama {
+	width: 100%;
+	height: 100px;
+	/* background-color: aquamarine; */
+}
+
+.zanw {
+	width: 15%;
+	height: 75px;
+	float: left;
+}
+
+.top {
+	width: 100%;
+	height: 75px;
+	/* border: 1px solid darkgray; */
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.65);
+}
+
+.logo {
+	width: 128px;
+	height: 75px;
+	display：inline-block;
+	float: left;
+	/* border-radius: 10px; */
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.logo-kan {
+	width: auto;
+	height: 75px;
+	margin-left: 25px;
+}
+
+.logme {
+	margin-left: 25px;
+	margin-right: 25px;
+	width: auto;
+	font-size: 30px;
+	line-height: 75px;
+	text-align: center;
+	height: 75px;
+	color: #fff;
+	float: left;
+	font-family: "华文新魏";
+}
+
+.karada {
+	width: 100%;
+	height: 550px;
+	margin: 0 auto 0;
+	/* background-color: antiquewhite; */
+}
+
+.omo {
+	width: 70%;
+	height: 550px;
+	margin: 0 auto 0;
+	/* border: 1px solid darkgray; */
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.5);
+	/* background-color: darkgrey; */
+}
+
+.index {
+	width: 33%;
+	height: 550px;
+	margin: 0 auto 0;
+	float: left;
+	color: rgba(255, 255, 255, 1);
+	/* background-color: aquamarine; */
+}
+
+.index form {
+	padding: 20px;
+	padding-top: 10px;
+	width: 100%;
+	height: 518px;
+	margin: 0 auto 0;
+	/* border: 1px solid darkgray; */
+	border-radius: 10px;
+	font-size: 20px;
+	position: relative;
+	/* background-color: lightgrey; */
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.index form samp {
+	font-family: "微软雅黑";
+	font-weight: 400;
+}
+
+.index form div {
+	margin: 20px;
+}
+
+.meise {
+	margin: 0 auto 0;
+	padding-left: 10px;
+	width: 30%;
+	height: 100%;
+	font-size: 20px;
+	line-height: 32px;
+	font-family: "微软雅黑";
+	font-weight: 400;
+	float: left;
+	text-align: center;
+}
+
+.meise-radio {
+	margin: 0 auto 0;
+	margin-right: 10px;
+	padding-left: 10px;
+	width: 35%;
+	height: 32px;
+	font-size: 20px;
+	line-height: 32px;
+	float: left;
+	font-family: "微软雅黑";
+	font-weight: 400;
+	text-align: center;
+	background-color: red;
+	border-radius: 2px;
+}
+
+.gerup {
+	background-color: red;
+	border-radius: 2px;
+}
+
+.result {
+	width: 67%;
+	height: 550px;
+	margin: 0 auto 0;
+	float: left;
+	/* background-color: lightsteelblue; */
+}
+
+.result ul {
+	padding: 25px 0 25px; 
+	padding-left: 50px;
+	padding-right: 5px;
+
+	/* background-color: antiquewhite; */
+}
+
+.result ul li {
+	font-size: 25px;
+	color: white;
+	font-family: "微软雅黑";
+	font-weight: 800;
+	list-style: none;
+	margin: 0 5px 0;
+	float: left;
+}
+
+.textInn {
+	padding: 0 5px 0;
+	width: 63%;
+	height: 32px;
+	border: 1px solid #ff0000;
+	border-radius: 2px;
+}
+
+.radInn {
+	width: 20px;
+	height: 20px;
+	top: 3px;
+	margin: 0 10px 0;
+	position: relative;
+}
+
+.butInn {
+	width: 300px;
+	height: 30px;
+	position: absolute;
+	bottom: 50px;
+}
+
+.sippo {
+	width: 100%;
+	height: 110px;
+	/* background: rgba(0, 0, 0, 0.5); */
+}
+
+.button-container {
+	display: flex;
+	justify-content: flex-end; /* 将按钮放在最右边 */
+	margin: 10px; /* 添加一些边距以便按钮不粘着页面边缘 */
+}
+
+.custom-button {
+	padding: 10px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid #ff0000; /* 初始状态的边框颜色为红色 */
+	border-radius: 10px;
+	background-color: #ff0000; /* 初始状态的背景颜色为红色 */
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-button:hover {
+	background-color: #fff;
+	color: #ff0000; /* 鼠标悬停时文本颜色为红色 */
+	border-color: #ff0000; /* 鼠标悬停时边框颜色为红色 */
+	transform: scale(1.05);
+}
+
+.custom-button-r{
+	position: absolute;
+	right: 0;
+}
+
+.endmas {
+	width: 100%;
+	height: 75px;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.65);
+}
+
+.logo-js {
+	width: 75px;
+	height: 100%;
+}
+
+.botLoc {
+	color: #fff;
+	float: right;
+}
+
+.zand {
+	width: 15%;
+	height: 75px;
+	float: right;
+}
+
+.hollow{
+	/* text-shadow: 1px 1px rgba(200, 0, 0, 0.75), -1px -1px rgba(255, 200, 200, 0.75), 1px -1px rgba(200, 0, 0, 0.75), -1px 1px rgba(255, 200, 200, 0.75); */
+    color:rgba(255, 255, 255, 1);
+} 
