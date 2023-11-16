@@ -33,8 +33,8 @@
 	}
 
 	.logo {
-		width: 128px;
-		height: auto;
+		width: auto;
+		height: 75px;
 		display：inline-block;
 		float: left;
 		/* border-radius: 10px; */
@@ -124,8 +124,8 @@
 
 	.meise-radio {
 		margin: 0 auto 0;
-		margin-right: 10px;
-		padding-left: 10px;
+		padding-left: 1%;
+		/* padding-left: 10px; */
 		width: 35%;
 		height: 32px;
 		font-size: 20px;
@@ -357,7 +357,7 @@
 		/* border-radius: 10px; */
 		position: relative;
 		/* background-color: lightgrey; */
-		/*background: rgba(0, 0, 0, 0.65);*/
+		/* background: rgba(0, 0, 0, 0.65); */
 	}
 	
 	.index form samp {
@@ -384,7 +384,7 @@
 	
 	.meise {
 		margin: 0 auto 0;
-		padding-left: 10px;
+		padding-left: 1%;
 		width: 20%;
 		height: 100%;
 		font-size: 35px;
@@ -475,7 +475,7 @@
 	
 	.textInn {
 		padding: 0 5px 0;
-		width: 77.5101%;
+		width: 77%;
 		height: 75px;
 		border: 1px solid #ff0000;
 		border-radius: 2px;
