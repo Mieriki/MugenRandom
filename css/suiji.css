@@ -3,257 +3,566 @@
 	margin: 0;
 }
 
-#app {
-	width: 100%;
-	height: 760px;
-	background-image: url("../Image/badg_1.png");
-	background-size:100% 100%;
-	background-attachment:fixed;
+@media (min-width: 1000px) {
+	#app {
+		width: 100%;
+		height: auto;
+		background-image: url("../Image/badg_1.png");
+		background-size: 100% 100%;
+		background-attachment: fixed;
+	}
+
+	.atama {
+		width: 100%;
+		height: 100px;
+		/* background-color: aquamarine; */
+	}
+
+	.zanw {
+		width: 15%;
+		height: 75px;
+		float: left;
+	}
+
+	.top {
+		width: 100%;
+		height: 75px;
+		/* border: 1px solid darkgray; */
+		border-radius: 10px;
+		background-color: rgba(0, 0, 0, 0.65);
+	}
+
+	.logo {
+		width: 128px;
+		height: auto;
+		display：inline-block;
+		float: left;
+		/* border-radius: 10px; */
+		background-color: rgba(255, 255, 255, 1);
+	}
+
+	.logo-kan {
+		width: auto;
+		height: 75px;
+		margin-left: 25px;
+	}
+
+	.logme {
+		margin-left: 25px;
+		margin-right: 25px;
+		width: auto;
+		font-size: 30px;
+		line-height: 75px;
+		text-align: center;
+		height: 75px;
+		color: #fff;
+		float: left;
+		font-family: "华文新魏";
+	}
+
+	.karada {
+		width: 100%;
+		height: 550px;
+		margin: 0 auto 0;
+		/* background-color: antiquewhite; */
+	}
+
+	.omo {
+		width: 70%;
+		height: 550px;
+		margin: 0 auto 0;
+		/* border: 1px solid darkgray; */
+		border-radius: 10px;
+		background: rgba(0, 0, 0, 0.5);
+		/* background-color: darkgrey; */
+	}
+
+	.index {
+		width: 33%;
+		height: auto;
+		margin: 0 auto 0;
+		float: left;
+		color: rgba(255, 255, 255, 1);
+		/* background-color: aquamarine; */
+	}
+
+	.index form {
+		padding: 20px;
+		padding-top: 10px;
+		width: 100%;
+		height: 518px;
+		margin: 0 auto 0;
+		/* border: 1px solid darkgray; */
+		border-radius: 10px;
+		font-size: 20px;
+		position: relative;
+		/* background-color: lightgrey; */
+		background: rgba(0, 0, 0, 0.65);
+	}
+
+	.index form samp {
+		font-family: "微软雅黑";
+		font-weight: 400;
+	}
+
+	.index form div {
+		margin: 20px;
+	}
+
+	.meise {
+		margin: 0 auto 0;
+		padding-left: 10px;
+		width: 30%;
+		height: 100%;
+		font-size: 20px;
+		line-height: 32px;
+		font-family: "微软雅黑";
+		font-weight: 400;
+		float: left;
+		text-align: center;
+	}
+
+	.meise-radio {
+		margin: 0 auto 0;
+		margin-right: 10px;
+		padding-left: 10px;
+		width: 35%;
+		height: 32px;
+		font-size: 20px;
+		line-height: 32px;
+		float: left;
+		font-family: "微软雅黑";
+		font-weight: 400;
+		text-align: center;
+		background-color: red;
+		border-radius: 2px;
+	}
+
+	.gerup {
+		background-color: red;
+		border-radius: 2px;
+	}
+
+	.result {
+		width: 67%;
+		height: 550px;
+		margin: 0 auto 0;
+		float: left;
+		padding-top: 25px;
+		/* background-color: lightsteelblue; */
+	}
+
+	.result ul {
+		width: auto;
+		height: 500px;
+		padding-left: 50px;
+		padding-right: 5px;
+		overflow-y: scroll;
+		scrollbar-width: none; /* firefox */  
+		-ms-overflow-style: none; /* IE 10+ */
+		/* background-color: antiquewhite; */
+	}
+
+	.result ul::-webkit-scrollbar {
+		width: 10px;
+		/* display: none; /* Chrome Safari */ 
+		 background-color: rgba(0, 0, 0, 0);
+		
+	}
+	
+	.result ul::-webkit-scrollbar-thumb {
+		width:2px;
+		height:60px;
+		background-color:rgba(204, 196, 196, 0.75);
+		border-radius:100px;
+	}
+	
+	.result ul::-webkit-scrollbar-thumb:hover {
+		width:2px;
+		height:60px;
+		background-color:rgba(204, 196, 196, 0.5);
+		border-radius:100px;
+	}
+	
+	.result ul::-webkit-scrollbar-track {  
+		border-radius: 10px;  
+		background-color: rgba(0, 0, 0, 0);  //设置背景透明
+	} 
+	
+	.result ul li {
+		font-size: 25px;
+		color: white;
+		stroke: #000000 font-family: "微软雅黑";
+		font-weight: 800;
+		list-style: none;
+		margin: 0 5px 0;
+		float: left;
+	}
+
+	.textInn {
+		padding: 0 5px 0;
+		width: 63%;
+		height: 32px;
+		border: 1px solid #ff0000;
+		border-radius: 2px;
+	}
+
+	.radInn {
+		width: 20px;
+		height: 20px;
+		top: 3px;
+		margin: 0 10px 0;
+		position: relative;
+	}
+
+	.butInn {
+		width: 300px;
+		height: 30px;
+		position: absolute;
+		bottom: 50px;
+	}
+
+	.sippo {
+		width: 100%;
+		height: 110px;
+		/* background: rgba(0, 0, 0, 0.5); */
+	}
+
+	.button-container {
+		display: flex;
+		justify-content: flex-end;
+		margin: 10px;
+	}
+
+	.custom-button {
+		padding: 10px 20px;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		border: 2px solid #ff0000;
+		border-radius: 10px;
+		background-color: #ff0000;
+		color: #fff;
+		cursor: pointer;
+		transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+	}
+
+	.custom-button:hover {
+		background-color: #fff;
+		color: #ff0000;
+		border-color: #ff0000;
+		transform: scale(1.05);
+	}
+
+	.custom-button-r {
+		position: absolute;
+		right: 0;
+	}
+
+	.endmas {
+		width: 100%;
+		height: 75px;
+		position: absolute;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.65);
+	}
+
+	.logo-js {
+		width: 75px;
+		height: 100%;
+	}
+
+	.botLoc {
+		color: #fff;
+		float: right;
+	}
+
+	.zand {
+		width: 15%;
+		height: 75px;
+		float: right;
+	}
+
+	.hollow {
+		/* text-shadow: 1px 1px rgba(200, 0, 0, 0.75), -1px -1px rgba(255, 200, 200, 0.75), 1px -1px rgba(200, 0, 0, 0.75), -1px 1px rgba(255, 200, 200, 0.75); */
+		color: rgba(255, 255, 255, 1);
+	}
+
 }
 
-.atama {
-	width: 100%;
-	height: 100px;
-	/* background-color: aquamarine; */
+@media (min-width: 0px) and (max-width: 1000px) {
+	#app {
+		width: 100%;
+		height: 2000px;
+		z-index: 100;
+		background-image: url("../Image/abg_1.png");
+		background-size: 100% 100%;
+		background-attachment: fixed;
+	}
+
+	.atama {
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;
+		z-index: 999999;
+		background-color: rgba(0, 0, 0, 0.75);
+	}
+
+	.logo {
+		/* display: none; */
+		width: auto;
+		height: 100px;
+		display：inline-block;
+		float: left;
+		/* border-radius: 10px; */
+		background-color: rgba(255, 255, 255, 1);
+	}
+
+	.logo-kan {
+		/* display: none; */
+		width: auto;
+		height: 100px;
+		margin-left: 25px;
+	}
+	
+	.omo {
+		width: 100%;
+		height: 1900px;
+		margin: 100px auto 0;
+		/* border: 1px solid darkgray; */
+		/* border-radius: 10px; */
+		background: rgba(0, 0, 0, 0.5);
+		/* background-color: darkgrey; */
+	}
+	
+	.index {
+		width: 90%;
+		height: auto;
+		margin: 0 auto 0;
+		color: rgba(255, 255, 255, 1);
+		/* background-color: aqua; */
+		font-size: 35px
+		/* background-color: aquamarine; */
+	}
+
+	.index form {
+		/* padding: 20px; */
+		padding-top: 10px;
+		width: 100%;
+		height: 900px;
+		margin: 0 auto 0;
+		/* border: 1px solid darkgray; */
+		/* border-radius: 10px; */
+		position: relative;
+		/* background-color: lightgrey; */
+		background: rgba(0, 0, 0, 0.65);
+	}
+	
+	.index form samp {
+		font-family: "微软雅黑";
+		font-weight: 400;
+		font-size: 35px;
+		top: 10px;
+		position: relative;
+	}
+	
+	.logo-js {
+		/* display: none; */
+		width: auto;
+		float: right;
+		height: 100px;
+	}
+	
+	.index form div {
+		width: 100%;
+		height: 75px;
+		margin-top: 20px;
+		/* margin: 20px; */
+	}
+	
+	.meise {
+		margin: 0 auto 0;
+		padding-left: 10px;
+		width: 20%;
+		height: 100%;
+		font-size: 35px;
+		line-height: 75px;
+		font-family: "微软雅黑";
+		font-weight: 400;
+		float: left;
+		text-align: center;
+	}
+	
+	.meise-radio {
+		margin: 0 auto 0;
+		margin-right: 10px;
+		padding-left: 10px;
+		width: 35%;
+		height: 75px;
+		font-size: 35px;
+		line-height: 75px;
+		float: left;
+		font-family: "微软雅黑";
+		font-weight: 400;
+		text-align: center;
+		background-color: red;
+		border-radius: 2px;
+	}
+	
+	.gerup {
+		background-color: red;
+		border-radius: 2px;
+	}
+	
+	.result {
+		width: 95%;
+		height: auto;
+		margin: 0 auto 0;
+		/* float: left; */
+		padding-top: 25px;
+		/* background-color: lightsteelblue; */
+	}
+	
+	.result ul {
+		width: auto;
+		height: 900px;
+		padding-left: 50px;
+		padding-right: 5px;
+		overflow-y: scroll;
+		scrollbar-width: none; /* firefox */  
+		-ms-overflow-style: none; /* IE 10+ */
+		/* background-color: antiquewhite; */
+	}
+	
+	.result ul::-webkit-scrollbar {
+		width: 10px;
+		/* display: none; /* Chrome Safari */ 
+		 background-color: rgba(0, 0, 0, 0);
+		
+	}
+	
+	.result ul::-webkit-scrollbar-thumb {
+		width:2px;
+		height:60px;
+		background-color:rgba(204, 196, 196, 0.75);
+		border-radius:100px;
+	}
+	
+	.result ul::-webkit-scrollbar-thumb:hover {
+		width:2px;
+		height:60px;
+		background-color:rgba(204, 196, 196, 0.5);
+		border-radius:100px;
+	}
+	
+	.result ul::-webkit-scrollbar-track {  
+		border-radius: 10px;  
+		background-color: rgba(0, 0, 0, 0);  //设置背景透明
+	} 
+	
+	.result ul li {
+		font-size: 25px;
+		color: white;
+		stroke: #000000 font-family: "微软雅黑";
+		font-weight: 800;
+		font-size: 35px;
+		list-style: none;
+		margin: 0 5px 0;
+		float: left;
+	}
+	
+	.textInn {
+		padding: 0 5px 0;
+		width: 77.5101%;
+		height: 75px;
+		border: 1px solid #ff0000;
+		border-radius: 2px;
+		font-size: 35px;
+	}
+	
+	.radInn {
+		width: 35px;
+		height: 35px;
+		top: 15px;
+		margin-left: 20px;
+		margin-right: 20px;
+		position: relative;
+	}
+	
+	.butInn {
+		width: 300px;
+		height: 30px;
+		position: absolute;
+		bottom: 50px;
+	}
+	
+	.sippo {
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		bottom: 0;
+		/* background: rgba(0, 0, 0, 0.5); */
+	}
+	
+	.button-container {
+		display: flex;
+		justify-content: flex-end;
+		margin: 10px;
+	}
+	
+	.custom-button {
+		width: 40%;
+		height: auto;
+		padding: 10px 20px;
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		border: 2px solid #ff0000;
+		border-radius: 10px;
+		background-color: #ff0000;
+		color: #fff;
+		cursor: pointer;
+		transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+	}
+	
+	.custom-button:hover {
+		background-color: #fff;
+		color: #ff0000;
+		border-color: #ff0000;
+		transform: scale(1.05);
+	}
+	
+	.custom-button-r {
+		position: absolute;
+		right: 0;
+	}
+	
+	.endmas {
+		width: 100%;
+		height: 100px;
+		position: absolute;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.65);
+	}
+	
+	.botLoc {
+		color: #fff;
+		float: right;
+	}
+	
+	.logme {
+		margin-left: 25px;
+		margin-right: 25px;
+		width: auto;
+		font-size: 40px;
+		line-height: 100px;
+		text-align: center;
+		height: 100px;
+		color: #fff;
+		float: right;
+		font-family: "华文新魏";
+	}
 }
-
-.zanw {
-	width: 15%;
-	height: 75px;
-	float: left;
-}
-
-.top {
-	width: 100%;
-	height: 75px;
-	/* border: 1px solid darkgray; */
-	border-radius: 10px;
-	background-color: rgba(0, 0, 0, 0.65);
-}
-
-.logo {
-	width: 128px;
-	height: 75px;
-	display：inline-block;
-	float: left;
-	/* border-radius: 10px; */
-	background-color: rgba(255, 255, 255, 1);
-}
-
-.logo-kan {
-	width: auto;
-	height: 75px;
-	margin-left: 25px;
-}
-
-.logme {
-	margin-left: 25px;
-	margin-right: 25px;
-	width: auto;
-	font-size: 30px;
-	line-height: 75px;
-	text-align: center;
-	height: 75px;
-	color: #fff;
-	float: left;
-	font-family: "华文新魏";
-}
-
-.karada {
-	width: 100%;
-	height: 550px;
-	margin: 0 auto 0;
-	/* background-color: antiquewhite; */
-}
-
-.omo {
-	width: 70%;
-	height: 550px;
-	margin: 0 auto 0;
-	/* border: 1px solid darkgray; */
-	border-radius: 10px;
-	background: rgba(0, 0, 0, 0.5);
-	/* background-color: darkgrey; */
-}
-
-.index {
-	width: 33%;
-	height: 550px;
-	margin: 0 auto 0;
-	float: left;
-	color: rgba(255, 255, 255, 1);
-	/* background-color: aquamarine; */
-}
-
-.index form {
-	padding: 20px;
-	padding-top: 10px;
-	width: 100%;
-	height: 518px;
-	margin: 0 auto 0;
-	/* border: 1px solid darkgray; */
-	border-radius: 10px;
-	font-size: 20px;
-	position: relative;
-	/* background-color: lightgrey; */
-	background: rgba(0, 0, 0, 0.65);
-}
-
-.index form samp {
-	font-family: "微软雅黑";
-	font-weight: 400;
-}
-
-.index form div {
-	margin: 20px;
-}
-
-.meise {
-	margin: 0 auto 0;
-	padding-left: 10px;
-	width: 30%;
-	height: 100%;
-	font-size: 20px;
-	line-height: 32px;
-	font-family: "微软雅黑";
-	font-weight: 400;
-	float: left;
-	text-align: center;
-}
-
-.meise-radio {
-	margin: 0 auto 0;
-	margin-right: 10px;
-	padding-left: 10px;
-	width: 35%;
-	height: 32px;
-	font-size: 20px;
-	line-height: 32px;
-	float: left;
-	font-family: "微软雅黑";
-	font-weight: 400;
-	text-align: center;
-	background-color: red;
-	border-radius: 2px;
-}
-
-.gerup {
-	background-color: red;
-	border-radius: 2px;
-}
-
-.result {
-	width: 67%;
-	height: 550px;
-	margin: 0 auto 0;
-	float: left;
-	/* background-color: lightsteelblue; */
-}
-
-.result ul {
-	padding: 25px 0 25px; 
-	padding-left: 50px;
-	padding-right: 5px;
-
-	/* background-color: antiquewhite; */
-}
-
-.result ul li {
-	font-size: 25px;
-	color: white;
-	font-family: "微软雅黑";
-	font-weight: 800;
-	list-style: none;
-	margin: 0 5px 0;
-	float: left;
-}
-
-.textInn {
-	padding: 0 5px 0;
-	width: 63%;
-	height: 32px;
-	border: 1px solid #ff0000;
-	border-radius: 2px;
-}
-
-.radInn {
-	width: 20px;
-	height: 20px;
-	top: 3px;
-	margin: 0 10px 0;
-	position: relative;
-}
-
-.butInn {
-	width: 300px;
-	height: 30px;
-	position: absolute;
-	bottom: 50px;
-}
-
-.sippo {
-	width: 100%;
-	height: 110px;
-	/* background: rgba(0, 0, 0, 0.5); */
-}
-
-.button-container {
-	display: flex;
-	justify-content: flex-end; /* 将按钮放在最右边 */
-	margin: 10px; /* 添加一些边距以便按钮不粘着页面边缘 */
-}
-
-.custom-button {
-	padding: 10px 20px;
-	font-size: 18px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	border: 2px solid #ff0000; /* 初始状态的边框颜色为红色 */
-	border-radius: 10px;
-	background-color: #ff0000; /* 初始状态的背景颜色为红色 */
-	color: #fff;
-	cursor: pointer;
-	transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
-
-.custom-button:hover {
-	background-color: #fff;
-	color: #ff0000; /* 鼠标悬停时文本颜色为红色 */
-	border-color: #ff0000; /* 鼠标悬停时边框颜色为红色 */
-	transform: scale(1.05);
-}
-
-.custom-button-r{
-	position: absolute;
-	right: 0;
-}
-
-.endmas {
-	width: 100%;
-	height: 75px;
-	position: absolute;
-	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.65);
-}
-
-.logo-js {
-	width: 75px;
-	height: 100%;
-}
-
-.botLoc {
-	color: #fff;
-	float: right;
-}
-
-.zand {
-	width: 15%;
-	height: 75px;
-	float: right;
-}
-
-.hollow{
-	/* text-shadow: 1px 1px rgba(200, 0, 0, 0.75), -1px -1px rgba(255, 200, 200, 0.75), 1px -1px rgba(200, 0, 0, 0.75), -1px 1px rgba(255, 200, 200, 0.75); */
-    color:rgba(255, 255, 255, 1);
-} 
